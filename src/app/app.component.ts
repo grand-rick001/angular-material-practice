@@ -10,21 +10,6 @@ export class AppComponent implements OnInit{
   spinnerValue = 0;
   showFiller = false;
 
-  ngOnInit() {
-    // setInterval(() => {
-    //   this.spinnerValue = this.spinnerValue + 1;
-    //   if (this.spinnerValue > 100) {
-    //     this.spinnerValue = 0;
-    //   }
-    // }, 100);
-  }
-
-  // showSideNav() {
-  //   this.showFiller = !this.showFiller;
-  // }
-
-  log(state: any) {
-    console.log(state);
-  }
+  ngOnInit() {}
   
 }
