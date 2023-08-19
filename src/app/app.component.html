@@ -1,11 +1,22 @@
-<div>
-    <mat-progress-spinner [value]="spinnerValue"></mat-progress-spinner>
-    <mat-spinner color="warn"></mat-spinner>
-</div>
-
-<mat-progress-bar mode="determinate"></mat-progress-bar>
-
-<mat-progress-bar mode="indeterminate"></mat-progress-bar>
-
-<mat-progress-bar mode="buffer" [value]="spinnerValue"></mat-progress-bar>
-<mat-progress-bar mode="query"></mat-progress-bar>
+<mat-toolbar class="navbar" color="primary">
+    <div>
+        <button mat-fab extended color="primary">
+            <mat-icon>menu</mat-icon>
+            Codevolution
+        </button>
+    </div>
+    <div>
+        <button mat-fab extended color="primary">
+            <mat-icon>home</mat-icon>
+            Home
+        </button>
+        <button mat-fab extended color="primary">
+            <mat-icon>info</mat-icon>
+            About
+        </button>
+        <button mat-fab extended color="primary">
+            <mat-icon>build</mat-icon>
+            Services
+        </button>
+    </div>
+</mat-toolbar>

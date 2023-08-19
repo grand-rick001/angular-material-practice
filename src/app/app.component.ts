@@ -10,12 +10,12 @@ export class AppComponent implements OnInit{
   spinnerValue = 0;
 
   ngOnInit() {
-    setInterval(() => {
-      this.spinnerValue = this.spinnerValue + 1;
-      if (this.spinnerValue > 100) {
-        this.spinnerValue = 0;
-      }
-    }, 100);
+    // setInterval(() => {
+    //   this.spinnerValue = this.spinnerValue + 1;
+    //   if (this.spinnerValue > 100) {
+    //     this.spinnerValue = 0;
+    //   }
+    // }, 100);
   }
   
 }
