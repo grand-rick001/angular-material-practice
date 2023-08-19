@@ -1,39 +1,11 @@
 <div>
-    <button mat-mini-fab
-        [matBadge]="notifications" 
-        [matBadgeHidden]="notifications <= 0"
-        matBadgeSize="medium"
-        (click)="addNotification()"
-    >
-        <mat-icon>notification_important</mat-icon>
-    </button>
-</div>
-<div>
-    <span matBadge="5" matBadgePosition="below before" matBadgeColor="warn">Notifications</span>
-</div>
-<div>
-    <span matBadge="5" matBadgePosition="below after" matBadgeColor="accent">Notifications</span>
-</div>
-<div>
-    <span matBadge="5" matBadgePosition="above before">Notifications</span>
+    <mat-progress-spinner [value]="spinnerValue"></mat-progress-spinner>
+    <mat-spinner color="warn"></mat-spinner>
 </div>
 
-<div>
-    <span matBadge="5" matBadgeSize="small">Notifications</span>
-</div>
-<div>
-    <span matBadge="5" matBadgeSize="medium">Notifications</span>
-</div>
-<div>
-    <span matBadge="5" matBadgeSize="large">Notifications</span>
-</div>
+<mat-progress-bar mode="determinate"></mat-progress-bar>
 
-<div>
-    <span matBadge="5" matBadgeOverlap="false">Notifications</span>
-</div>
-<div>
-    <span matBadge="5" matBadgeOverlap="false">Notifications</span>
-</div>
-<div>
-    <span matBadge="5" matBadgeOverlap="false">Notifications</span>
-</div>
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+
+<mat-progress-bar mode="buffer" [value]="spinnerValue"></mat-progress-bar>
+<mat-progress-bar mode="query"></mat-progress-bar>
