@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'material-code';
+  notifications = 2;
+
+  addNotification() {
+    this.notifications++;
+  }
 }

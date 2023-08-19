@@ -1,6 +1,39 @@
 <div>
-    <mat-icon>sentiment_satisfied_alt</mat-icon>
+    <button mat-mini-fab
+        [matBadge]="notifications" 
+        [matBadgeHidden]="notifications <= 0"
+        matBadgeSize="medium"
+        (click)="addNotification()"
+    >
+        <mat-icon>notification_important</mat-icon>
+    </button>
 </div>
 <div>
-    Hello World
+    <span matBadge="5" matBadgePosition="below before" matBadgeColor="warn">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="below after" matBadgeColor="accent">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above before">Notifications</span>
+</div>
+
+<div>
+    <span matBadge="5" matBadgeSize="small">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeSize="medium">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeSize="large">Notifications</span>
+</div>
+
+<div>
+    <span matBadge="5" matBadgeOverlap="false">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeOverlap="false">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeOverlap="false">Notifications</span>
 </div>
