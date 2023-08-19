@@ -1,4 +1,4 @@
-<mat-toolbar class="navbar" color="primary">
+<!-- <mat-toolbar class="navbar" color="primary">
     <div>
         <button mat-fab extended color="primary">
             <mat-icon>menu</mat-icon>
@@ -19,4 +19,20 @@
             Services
         </button>
     </div>
-</mat-toolbar>
+</mat-toolbar> -->
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" (opened)="log('Opened')" (closed)="log('Closed')">Sidenav</mat-sidenav>
+    <mat-sidenav-content>
+        <!-- <button mat-button (click)="showSideNav()" color="primary">
+            Toggle sidenav
+        </button> -->
+        <!-- Open and close sidenav-->
+        <!-- <button (click)="sidenav.open()">Open</button>
+        <button (click)="sidenav.close()">Close</button> -->
+        <!-- Toggle -->
+        <button mat-raised-button disableRipple="" (click)="sidenav.toggle()">
+            <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+            <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+        </button>
+    </mat-sidenav-content>
+</mat-sidenav-container>

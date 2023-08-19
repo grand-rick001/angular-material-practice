@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
   title = 'material-code';
   spinnerValue = 0;
+  showFiller = false;
 
   ngOnInit() {
     // setInterval(() => {
@@ -16,6 +17,14 @@ export class AppComponent implements OnInit{
     //     this.spinnerValue = 0;
     //   }
     // }, 100);
+  }
+
+  // showSideNav() {
+  //   this.showFiller = !this.showFiller;
+  // }
+
+  log(state: any) {
+    console.log(state);
   }
   
 }
