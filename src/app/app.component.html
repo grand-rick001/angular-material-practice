@@ -1,46 +1,14 @@
-<!-- <div class="mat-headline-1">This is Display 1</div>
-<div class="mat-headline-2">This is Display 2</div>
-<div class="mat-headline-3">This is Display 3</div>
-<div class="mat-headline-4">This is Display 4</div> -->
-
-<!-- h1 and h2 -->
-<!-- <div class="mat-headline-5">This is Display 5</div>
-<div class="mat-headline-6">This is Display 6</div> -->
-
-<!-- h3 and h4 -->
-<!-- <div class="mat-subtitle-1">This is Subtitle 1</div>
-<div class="mat-subtitle-2">This is Subtitle 2</div>
-
-<div class="mat-body-1">This is Body 1</div>
-<div class="mat-body-2">This is Body 2</div>
-
-<div class="mat-caption">This is Caption</div> -->
-
-<!-- <div class="mat-typograpy">
-    <h1>This is a h1 heading</h1>
-    <h2>This is a h2 heading</h2>
-    <p>First paragraph</p>
-    <p>Second Paragraph</p>
-</div> -->
-<div>
-    <button mat-button>Click me!</button>
-    <button mat-raised-button>Click me!</button>
-    <button mat-flat-button>Click me!</button>
-    <button mat-stroked-button>Click me!</button>
+<!-- <div>
+    <mat-button-toggle #toggleButton checked disableRipple >Toggle</mat-button-toggle>
+    {{toggleButton.checked}}
 </div>
+ -->
 
-<div>
-    <button mat-icon-button color="primary">Icon</button>
-    <button mat-fab color="accent">Icon</button>
-    <button mat-mini-fab color="warn">Icon</button>
-</div>
-
-<button mat-fab extended color="primary">
-    <mat-icon>home</mat-icon>
-    Home
-</button>
-
-<button mat-fab disableRipple extended color="warn">
-    <mat-icon>phone</mat-icon>
-    Contact
-</button>
+ <div>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup.value}}
+ </div>
