@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { ResponsiveColumnService } from './services/responsive-column.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   title = 'material-code';
-  spinnerValue = 0;
-  showFiller = false;
+  cols: number;
 
-  ngOnInit() {}
+  items: number[] = [1,2,3,4,5,6,7,8,9,10];
+
+  constructor(private responsiveColumnService: ResponsiveColumnService) { 
+    this.cols = this.responsiveColumnService.getColumns();
+  }
+
+  ngOnInit(): void {}
+
+  @HostListener('window:resize', ['$event'])
+
+  onResize(event: any) {
+    this.cols = this.responsiveColumnService.getColumns();
+  }
   
 }
