@@ -1,51 +1,58 @@
-<mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
-    <button mat-menu-item [mat-menu-trigger-for]="subMenu">FrontEnd</button>
-    <button mat-menu-item>BackendEnd</button>
-</mat-menu>
+<mat-list>
+  <mat-list-item>
+    <mat-icon matListItemIcon>home</mat-icon>
+    <h3 matListItemTitle>Heading</h3>
+    <p matListItemLine>Line</p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <mat-icon matListItemIcon>folder</mat-icon>
+    <h3 matListItemTitle>Heading 2</h3>
+    <p matListItemLine>Line 2</p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <img matListItemAvatar src="https://cdn.pixabay.com/photo/2023/08/17/05/28/brain-8195504_1280.jpg" alt="...">
+    <h3 matListItemTitle>Title</h3>
+    <p matListItemLine>
+      <span>Subject</span>
+      <span class="demo-2"> -- Content</span>
+    </p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <img matListItemAvatar src="https://cdn.pixabay.com/photo/2023/08/17/05/28/brain-8195504_1280.jpg" alt="...">
+    <h3 matListItemTitle>Title</h3>
+    <p matListItemLine>
+      <span>Subject</span>
+      <span class="demo-2"> -- Content</span>
+    </p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <img matListItemAvatar src="https://cdn.pixabay.com/photo/2023/08/17/05/28/brain-8195504_1280.jpg" alt="...">
+    <h3 matListItemTitle>Title</h3>
+    <p matListItemLine>
+      <span>Subject</span>
+      <span class="demo-2"> -- Content</span>
+    </p>
+  </mat-list-item>
+</mat-list>
 
-<button mat-flat-button color="primary" [mat-menu-trigger-for]="appMenu" class="center">Menu</button>
+<!-- <mat-action-list>
+  <button mat-list-item >Save</button>
+  <button mat-list-item >Undo</button>
+</mat-action-list> -->
 
-<mat-menu #subMenu="matMenu">
-    <button mat-menu-item>Angular</button>
-    <button mat-menu-item>React</button>
-    <button mat-menu-item>Vue</button>
-</mat-menu>
 
-<mat-menu #lazyMenu="matMenu">
-    <ng-template matMenuContent let-name="name" let-hobby="hobby">
-        <button mat-menu-item>
-            <mat-icon>build</mat-icon>
-            Settings
-        </button>
-        <button mat-menu-item>
-            <mat-icon>favorite</mat-icon>
-            Hobby is {{hobby}}
-        </button>
-        <button mat-menu-item>
-            <mat-icon>logout</mat-icon>
-            Logout - {{name}}
-        </button>
-    </ng-template>
-</mat-menu>
+<!-- <mat-list dense>
+    <mat-list-item>Item 1</mat-list-item>
+    <mat-list-item>Item 2</mat-list-item>
+    <mat-list-item>Item 3</mat-list-item>
+</mat-list>
 
-<button mat-raised-button [mat-menu-trigger-for]="lazyMenu" [matMenuTriggerData]="{name: 'Vishwas', hobby: 'Football'}">Vishwas</button>
-<button mat-raised-button [mat-menu-trigger-for]="lazyMenu" [matMenuTriggerData]="{name: 'Codevolution', hobby: 'Teaching'}">Codevolution</button>
-
-<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-    <mat-icon>more_vert</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>dialpad</mat-icon>
-      <span>Redial</span>
-    </button>
-    <button mat-menu-item disabled>
-      <mat-icon>voicemail</mat-icon>
-      <span>Check voice mail</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>notifications_off</mat-icon>
-      <span>Disable alerts</span>
-    </button>
-  </mat-menu>
-  
+<mat-nav-list>
+    <a mat-list-item href="#">Link 1</a>
+    <a mat-list-item href="#">Link 2</a>
+    <a mat-list-item href="#">Link 3</a>
+</mat-nav-list> -->
