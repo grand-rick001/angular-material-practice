@@ -1,20 +1,15 @@
-<!-- <mat-tab-group dynamicHeight #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)">
-  <mat-tab label="Angular">Angular Content</mat-tab>
-  <mat-tab label="React">React Content</mat-tab>
-  <mat-tab label="Vue">Vue Content</mat-tab>
-  <mat-tab>
-    <ng-template mat-tab-label>
-      <mat-icon class="example-tab-icon">thumb_up</mat-icon>
-    </ng-template>
-    Yurr
-  </mat-tab>
-</mat-tab-group>
-{{selectedIndex}} -->
-<nav mat-tab-nav-bar [backgroundColor]="'primary'" [tabPanel]="tabPanel">
-  <a mat-tab-link> Hello </a>
-  <a mat-tab-link> Hello </a>
-  <a mat-tab-link> Hello </a>
-  <a mat-tab-link> Hello </a>
-  <a mat-tab-link disabled>Disabled Link</a>
-</nav>
-<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+<mat-horizontal-stepper>
+  <mat-step label="Shipping Address">
+    <p>Shipping Address Details</p>
+  </mat-step>
+  <mat-step label="Billing Address">
+    <p>Billing Address Details</p>
+  </mat-step>
+  <div>
+    <button mat-button matStepperPrevious>Back</button>
+    <button mat-button matStepperNext>Next</button>
+  </div>
+  <mat-step label="Place Order">
+    <p>Order Details</p>
+  </mat-step>
+</mat-horizontal-stepper>
