@@ -1,15 +1,15 @@
-<mat-horizontal-stepper>
-  <mat-step label="Shipping Address">
+<mat-vertical-stepper linear>
+  <mat-step label="Shipping Address" completed=true>
     <p>Shipping Address Details</p>
   </mat-step>
-  <mat-step label="Billing Address">
+  <mat-step label="Billing Address" completed=false optional>
     <p>Billing Address Details</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
   </mat-step>
-  <div>
-    <button mat-button matStepperPrevious>Back</button>
-    <button mat-button matStepperNext>Next</button>
-  </div>
-  <mat-step label="Place Order">
+  <mat-step label="Place Order" completed=false>
     <p>Order Details</p>
   </mat-step>
-</mat-horizontal-stepper>
+</mat-vertical-stepper>
